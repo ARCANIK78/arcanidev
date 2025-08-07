@@ -50,7 +50,7 @@ const Home = () => {
         </Box>
       </Section>
       <Section>
-        <Heading>
+        <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
@@ -65,6 +65,11 @@ const Home = () => {
           <BioYear>2024 to present</BioYear>
           Working as a freelancer
         </BioSection>
+      </Section>
+      <Section>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
       </Section>
     </Container>
   );
