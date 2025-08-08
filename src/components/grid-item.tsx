@@ -1,3 +1,4 @@
+'use client'
 import NextLink from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Box, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
@@ -17,6 +18,7 @@ export const GridItem: React.FC<GridItemProps> = ({ children, href, title, thumb
       <Image
         src={thumbnail}
         alt={title}
+        layout="responsive"
         className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"

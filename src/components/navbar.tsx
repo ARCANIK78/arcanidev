@@ -20,8 +20,8 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
 import { IoLogoGithub } from 'react-icons/io5';
 import { ReactNode } from 'react';
+import Logo from './logo';
 
-// Tipado para LinkItem
 interface LinkItemProps extends LinkProps {
   href: string;
   path: string;
@@ -29,12 +29,10 @@ interface LinkItemProps extends LinkProps {
   children: ReactNode;
 }
 
-// Tipado para Navbar props
 interface NavbarProps {
   path: string;
 }
 
-// Enlace personalizado con estado activo
 const LinkItem = ({ href, path, target, children, ...props }: LinkItemProps) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
@@ -45,7 +43,7 @@ const LinkItem = ({ href, path, target, children, ...props }: LinkItemProps) => 
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'teal.200' : undefined} // Cambia si usas un color personalizado
+      bg={active ? 'teal.200' : undefined} 
       color={active ? '#202023' : inactiveColor}
       target={target}
       {...props}
@@ -55,14 +53,12 @@ const LinkItem = ({ href, path, target, children, ...props }: LinkItemProps) => 
   );
 };
 
-// MenuLink con forwardRef tipado correctamente
 const MenuLink = forwardRef<HTMLAnchorElement, LinkProps>((props, ref) => (
   <Link as={NextLink} ref={ref} {...props} />
 ));
 
-MenuLink.displayName = "MenuLink"; // para evitar advertencias en consola
+MenuLink.displayName = "MenuLink";
 
-// Navbar principal
 const Navbar = ({ path }: NavbarProps) => {
   return (
     <Box
@@ -83,8 +79,7 @@ const Navbar = ({ path }: NavbarProps) => {
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing="tighter">
-            {/* Aquí puedes poner tu logo o nombre */}
-            ArcaniDev
+            <Logo />
           </Heading>
         </Flex>
 
