@@ -18,13 +18,6 @@ const WorkDetailClient: React.FC<Props> = ({ work }) => {
           {work.title} <Badge>{work.year || '2024'}</Badge>
         </Title>
         <P>{work.description}</P>
-        {work.features && (
-          <UnorderedList my={4}>
-            {work.features.map((feature, i) => (
-              <ListItem key={i}>{feature}</ListItem>
-            ))}
-          </UnorderedList>
-        )}
         <List ml={4} my={4}>
           {work.platform && (
             <ListItem>
