@@ -4,6 +4,7 @@ import ChakraWrapper from "../lib/chakra-provider";
 import Navbar from "@/components/navbar";
 import { ReactNode } from "react";
 import Fonts from "@/components/fonts";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "ArcaniDev",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Navbar path="/" />
           {children}
         </ChakraWrapper>
+        <Footer />
       </body>
     </html>
   );

@@ -13,6 +13,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
+import Layout from '@/components/article';
 
 type AttachmentMedia = {
   source?: string;
@@ -74,8 +75,12 @@ export default function PostsPage() {
   }
 
   return (
-    <Container pt={20}>
-      <Heading mb={6}>Posts</Heading>
+<Container pt={20}>
+    <Layout title='work'>
+    <Container pt={10}>
+        <Heading as="h3" fontSize={20} mb={4}>
+            recent posts
+        </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
         {posts.map(post => {
           const attachment = post.attachments?.data[0];
@@ -96,7 +101,6 @@ export default function PostsPage() {
                   </Text>
                   <Link
                     href={post.permalink_url}
-                    color="blue.500"
                     isExternal
                     fontWeight="bold"
                     display="flex"
@@ -134,7 +138,7 @@ export default function PostsPage() {
                 <Text noOfLines={3} fontWeight="semibold">
                   {post.message || '(Sin título)'}
                 </Text>
-                <Link href={post.permalink_url} isExternal color="blue.500" fontWeight="bold" display="flex" alignItems="center">
+                <Link href={post.permalink_url} isExternal  display="flex" alignItems="center">
                     Ver publicación <ExternalLinkIcon ml={1} />
                 </Link>
               </VStack>
@@ -142,6 +146,8 @@ export default function PostsPage() {
           );
         })}
       </SimpleGrid>
+    </Container>
+    </Layout>
     </Container>
   );
 }

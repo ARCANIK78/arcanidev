@@ -20,7 +20,6 @@ const Works = () => {
                             title={work.title}
                             thumbnail={work.thumbnail}
                             >
-                            {work.description}
                             </WorkGridItem>
                         </Section>
                         ))}

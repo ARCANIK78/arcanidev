@@ -5,15 +5,19 @@ import Paragraph from "@/components/paragraph";
 import Section from "@/components/section";
 import { BioSection, BioYear } from '@/components/bio';
 import {
+  Link,
   Container,
   Box,
   Heading,
   useColorModeValue,
   Button,
   Center,
+  ListItem,
+  List,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from '@chakra-ui/icons';
-
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
+import { FaLinkedin,FaFacebook } from "react-icons/fa";
+import { IoLogoGithub } from 'react-icons/io5'
 const Home = () => {
   return (
     <Container pt={20}>
@@ -70,6 +74,46 @@ const Home = () => {
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
+        <List>
+          <ListItem>
+            <Link href='https://github.com/ARCANIK78' target='_blank'>
+            <Button variant="ghost" colorScheme='teal' leftIcon={<IoLogoGithub />}>
+              @ARCANIK
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/luis-edgar-arcani-ribera-278645257/" target="_blank">
+              <Button variant="ghost" colorScheme='teal' leftIcon={<FaLinkedin />}>
+              @LuisArcani
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href='https://www.facebook.com/profile.php?id=61578898216834' target='_blank'>
+            <Button variant="ghost" colorScheme='teal' leftIcon={<FaFacebook />}>
+              @ArcaniDev
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+      </Section>
+      <Section>
+        <Heading as="h3" variant="section-title">
+            Contact
+        </Heading>
+        <p>
+           If you'd like to discuss a project, request information, or establish a collaboration,
+           you can contact us via the following link.
+        </p>
+        <Box textAlign="center" my={4} >
+          <Button as={NextLink} href=""
+            scroll={false}
+            leftIcon={<EmailIcon />}
+            colorScheme="teal" >
+              Contact my email
+            </Button>
+        </Box>
       </Section>
     </Container>
   );

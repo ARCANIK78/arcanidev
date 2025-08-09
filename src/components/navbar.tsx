@@ -92,12 +92,10 @@ const Navbar = ({ path }: NavbarProps) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>Works</LinkItem>
-          <LinkItem href="https://store.craftz.dog/" path={path}>Wallpapers</LinkItem>
           <LinkItem href="/posts" path={path}>Posts</LinkItem>
-          <LinkItem href="https://uses.craftz.dog/" path={path}>Uses</LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/ARCANIK78"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -105,7 +103,7 @@ const Navbar = ({ path }: NavbarProps) => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            GitHub
           </LinkItem>
         </Stack>
 
@@ -123,12 +121,10 @@ const Navbar = ({ path }: NavbarProps) => {
               <MenuList>
                 <MenuItem as={MenuLink} href="/">About</MenuItem>
                 <MenuItem as={MenuLink} href="/works">Works</MenuItem>
-                <MenuItem as={MenuLink} href="https://store.craftz.dog/">Wallpapers</MenuItem>
                 <MenuItem as={MenuLink} href="/posts">Posts</MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">Uses</MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/ARCANIK78"
                   target="_blank"
                 >
                   View Source
