@@ -31,12 +31,14 @@ const WorkDetailClient: React.FC<Props> = ({ work }) => {
               <span>{work.stack}</span>
             </ListItem>
           )}
-          {work.source && (
+          {work.source && work.source.length > 0 && (
             <ListItem>
               <Meta>Source</Meta>
-              <Link href={work.source} isExternal>
-                {work.source} <ExternalLinkIcon mx="2px" />
-              </Link>
+              {work.source.map((url, i) => (
+                <Link key={i} href={url.trim()} isExternal display="block" mb={1}>
+                  {url.trim()} <ExternalLinkIcon mx="2px" />
+                </Link>
+              ))}
             </ListItem>
           )}
         </List>

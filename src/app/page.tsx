@@ -13,13 +13,17 @@ import {
   Button,
   Center,
   ListItem,
-  List,
+  List,Image
 } from "@chakra-ui/react";
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
 import { FaLinkedin,FaFacebook } from "react-icons/fa";
 import { IoLogoGithub } from 'react-icons/io5'
+import Layout from '@/components/article';
+
 const Home = () => {
+  const perfil = '/picture/perfil/perfilito.jpg';
   return (
+    <Layout title='page'>
     <Container pt={20}>
       <Box
         borderRadius="lg"
@@ -35,9 +39,14 @@ const Home = () => {
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            I am LuisArcani
+            Luis Arcani Ribera
           </Heading>
           <p> Software Engineer / Full Stack Developer /</p>
+        </Box>
+        <Box flexShrink={0} mt={{based: 4, md: 0}} ml={{ md:6}} textAlign="center" >
+          <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" w="120px" h="120px" display="inline-block" borderRadius="full" overflow="hidden" >
+            <Image src={perfil} alt="Profiel image" width={120} height={175} />
+          </Box>
         </Box>
       </Box>
       <Section delay={0.1}>
@@ -116,6 +125,7 @@ const Home = () => {
         </Box>
       </Section>
     </Container>
+  </Layout>
   );
 };
 

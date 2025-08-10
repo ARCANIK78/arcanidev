@@ -23,12 +23,13 @@ const Logo = () => {
         (<Link href="/" scroll={false}>
             <LogoBox>
                  <Text
+                    translate='no'
                     color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                     fontFamily='M PLUS Rounded 1c", sans-serif'
                     fontWeight="bold"
                     ml={3}
                     >
-                   Arcani<Text as="span">Dev</Text>
+                   Arcani<Text translate='no' as="span">Dev</Text>
                 </Text>
             </LogoBox>
         </Link>

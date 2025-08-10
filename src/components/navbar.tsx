@@ -78,7 +78,7 @@ const Navbar = ({ path }: NavbarProps) => {
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing="tighter">
+          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
@@ -107,7 +107,7 @@ const Navbar = ({ path }: NavbarProps) => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} alignItems="right">
+        <Box display="flex" flex={1} alignItems="center" justifyContent="flex-end">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
