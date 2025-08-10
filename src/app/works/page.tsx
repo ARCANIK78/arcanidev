@@ -3,8 +3,10 @@ import Section from "@/components/section";
 import Layout from "@/components/article";
 import { WorkGridItem } from "@/components/grid-item";
 import {works} from "@/data/works"
+import { StaticImageData } from "next/image";
 
 const Works = () => {
+    const noImage = "/picture/noImage/image.png"
     return(
         <Container pt={20}>
             <Layout title="Works">
@@ -18,8 +20,9 @@ const Works = () => {
                             <WorkGridItem
                             id={work.id}
                             title={work.title}
-                            thumbnail={work.thumbnail}
+                            thumbnail={work.thumbnail ?? noImage}
                             >
+                                {work.title}
                             </WorkGridItem>
                         </Section>
                         ))}
