@@ -11,7 +11,6 @@ import {
   Heading,
   useColorModeValue,
   Button,
-  Center,
   ListItem,
   List,Image
 } from "@chakra-ui/react";

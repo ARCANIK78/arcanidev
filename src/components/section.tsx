@@ -1,13 +1,7 @@
 "use client";
-import { chakra, shouldForwardProp } from "@chakra-ui/react";
-import { motion } from "framer-motion"; // ← aquí está el cambio
-import { ReactNode } from "react";
 
-const StyledDiv = chakra(motion.div, {
-  shouldForwardProp: (prop) => {
-    return shouldForwardProp(prop) || prop === "transition";
-  },
-});
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 interface SectionProps {
   children: ReactNode;
@@ -15,14 +9,15 @@ interface SectionProps {
 }
 
 const Section = ({ children, delay = 0 }: SectionProps) => (
-  <StyledDiv
+  <motion.div
     initial={{ y: 10, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.8, delay }}
-    mb={6}
+    style={{ marginBottom: "1.5rem" }}
   >
     {children}
-  </StyledDiv>
+  </motion.div>
 );
 
 export default Section;
+

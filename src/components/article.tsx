@@ -23,7 +23,7 @@ export const Layout: React.FC<LayoutProps> = ({children, title}) => {
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ duration: 0.4, type: 'easeInOut' }}
+      transition={{ duration: 0.4, ease: "easeInOut", type: "tween" }}
       style={{ position: 'relative' }}
     >
             {title && (
