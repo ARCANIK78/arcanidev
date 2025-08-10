@@ -116,7 +116,7 @@ const Home = () => {
            you can contact us via the following link.
         </p>
         <Box textAlign="center" my={4} >
-          <Button as={NextLink} href=""
+          <Button as={NextLink} href="mailto:luisedgararcaniribera@gmail.com"
             scroll={false}
             leftIcon={<EmailIcon />}
             colorScheme="teal" >

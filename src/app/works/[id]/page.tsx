@@ -2,11 +2,12 @@ import { works } from '@/data/works'
 import { notFound } from 'next/navigation'
 import WorkDetailClient from '@/components/work-detail-client'
 interface Props {
-  params: { id: string }
+  params: Promise<{ id: string }>;
 }
 
-export default function WorkDetailPage({ params }: Props) {
-  const work = works.find(w => w.id === params.id)
+export default async function WorkDetailPage({ params }: Props) {
+  const { id } = await params;
+  const work = works.find(w => w.id === id)
 
   if (!work) {
     notFound()
