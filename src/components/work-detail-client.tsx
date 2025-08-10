@@ -1,7 +1,7 @@
 'use client'
 import { WorkType } from '@/data/works'
 import Layout from '@/components/article'
-import { Badge, Container, List, ListItem, SimpleGrid, UnorderedList, Link } from '@chakra-ui/react'
+import { Badge, Container, List, ListItem, SimpleGrid, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Meta, Title, WorkImage } from '@/components/work'
 import P from '@/components/paragraph'

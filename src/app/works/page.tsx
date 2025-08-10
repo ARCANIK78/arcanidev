@@ -1,9 +1,9 @@
-import { Container, Heading, SimpleGrid, Divider} from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "@/components/section";
 import Layout from "@/components/article";
 import { WorkGridItem } from "@/components/grid-item";
 import {works} from "@/data/works"
-import { delay } from "framer-motion";
+
 const Works = () => {
     return(
         <Container pt={20}>

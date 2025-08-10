@@ -112,7 +112,7 @@ const Home = () => {
             Contact
         </Heading>
         <p>
-           If you'd like to discuss a project, request information, or establish a collaboration,
+           If you&apos;d like to discuss a project, request information, or establish a collaboration,
            you can contact us via the following link.
         </p>
         <Box textAlign="center" my={4} >
