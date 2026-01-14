@@ -1,4 +1,4 @@
-// app/page.tsx
+
 "use client";
 import NextLink from 'next/link';
 import Paragraph from "@/components/paragraph";
