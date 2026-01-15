@@ -3,8 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   const PAGE_ID = "768559203002227";
-  const ACCESS_TOKEN =
-    "EAFXsKZCXyvHcBQcZC0WWJSOZBiMmL8SXRDnNKHhZBAlMkzOZA2OlrP3cpeTYAEXieSpasCk1m7ZBsmDvt6fEjHEGRCJNzO2LyawyalBjZCUiBFOz8bUzZBAky0ZAbSgoXcWmMaRZAUdUdkV3JYUpj56Oag1D1Re9F80kYwg1WDldRvryf9JY5QNo0Nt8udpYxP7HP1XseIW5iyDsgg0ikBTP1ZAkM5VynTAkUthRXbm3cgZD";
+  const ACCESS_TOKEN = process.env.FACEBOOK_PAGE_TOKEN;
 
 const url = `https://graph.facebook.com/v24.0/${PAGE_ID}/posts?fields=id,message,created_time,full_picture,permalink_url,attachments{media,type}&access_token=${ACCESS_TOKEN}`;
 

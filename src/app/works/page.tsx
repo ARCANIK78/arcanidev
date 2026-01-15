@@ -22,7 +22,7 @@ const Works = () => {
                             title={work.title}
                             thumbnail={work.thumbnail ?? noImage}
                             >
-                                {work.title}
+                             {""}
                             </WorkGridItem>
                         </Section>
                         ))}
