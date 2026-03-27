@@ -3,10 +3,20 @@ import { Box, useColorMode } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 export default function Background() {
-    const {colorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     const [mounted, setMounted] = useState(false)
-    useEffect(()=> setMounted(true), [])
-    if( mounted || colorMode !== "dark") return null;
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mounted) {
+        return null;
+    }
+
+    if (colorMode !== "dark") {
+        return null;
+    }
     
   return (
     <Box

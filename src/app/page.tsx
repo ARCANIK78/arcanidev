@@ -62,22 +62,25 @@ const Home = () => {
         </Box>
       </Section>
       <Section>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>2002</BioYear>
-          Born in San Borja, Beni, Bolivia
-        </BioSection>
-        <BioSection>
-          <BioYear>2025</BioYear>
-          Graduated from the Autonomous University of Beni
-        </BioSection>
-        <BioSection>
-          <BioYear>2024 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
+       <Heading as="h3" variant="section-title">
+    Bio
+  </Heading>
+  <BioSection>
+    <BioYear>2026 to Present</BioYear>
+    Freelance Software Developer
+  </BioSection>
+  <BioSection>
+    <BioYear>2026</BioYear>
+    Software Development Engineer at the Autonomous Municipal Government of Trinidad
+  </BioSection>
+  <BioSection>
+    <BioYear>2026</BioYear>
+    B.S. in Systems Engineering — Universidad Autónoma del Beni (UABJB)
+  </BioSection>
+  <BioSection>
+    <BioYear>2002</BioYear>
+    Born in San Borja, Beni, Bolivia.
+  </BioSection>      </Section>
       <Section>
         <Heading as="h3" variant="section-title">
           On the web
