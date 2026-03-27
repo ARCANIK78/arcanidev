@@ -4,6 +4,8 @@ import hogar from '../picture/works/tu-hogar-ideal.png'
 import horro from '../picture/works/horro.png'
 import repocapy from '../picture/works/repocapy1.png'
 import asistens from '../picture/works/asistens.png'
+import capiScan from '../picture/works/CapiScan.png'
+
 export type WorkType = {
   id: string
   title: string
@@ -17,6 +19,22 @@ export type WorkType = {
   features?: string[]
 }
 export const works: WorkType[] = [
+  {
+    id: "0",
+    title: "CapiScan",
+    year: "2026",
+    description: "I developed a mobile application that uses Google ML Kit to identify and validate banknote serial numbers through the camera in real time. I implemented a clean architecture that allows fast processing of visual data, providing the user with immediate feedback on the validity of the banknote directly on their device.",
+    platform: "Mobile",
+    stack: "Kotlin, Jetpack Compose, CameraX, Google ML Kit",
+    source: ["https://play.google.com/store/apps/details?id=com.capiscan.app&hl=en_US"],
+    thumbnail: capiScan,
+    images: [
+      "/picture/CapiScan/capi-scan1.jpeg",
+      "/picture/CapiScan/capi-scan2.jpeg",
+      "/picture/CapiScan/capi-scan3.jpeg",
+      "/picture/CapiScan/capi-scan5.jpeg"
+    ]
+  },
   {
   id: "1",
   title: "Multiplatform Attendance Control System",
