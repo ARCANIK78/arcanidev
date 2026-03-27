@@ -20,7 +20,7 @@ export type WorkType = {
 }
 export const works: WorkType[] = [
   {
-    id: "0",
+    id: "capiscan",
     title: "CapiScan",
     year: "2026",
     description: "I developed a mobile application that uses Google ML Kit to identify and validate banknote serial numbers through the camera in real time. I implemented a clean architecture that allows fast processing of visual data, providing the user with immediate feedback on the validity of the banknote directly on their device.",
@@ -36,7 +36,7 @@ export const works: WorkType[] = [
     ]
   },
   {
-  id: "1",
+    id: "asistens",
   title: "Multiplatform Attendance Control System",
   year: "2025",
   description: "Attendance Management is a multi-platform system that facilitates staff management through a web-based dashboard for registering, editing, and deleting employees, generating unique QR codes for each user, controlling entry and exit times, viewing attendance, and generating PDF reports. It also includes a desktop application that allows attendance to be recorded by scanning each employee's QR code, and a documented API with Swagger that exposes the services necessary for communication between components. This solution improves the accuracy and efficiency of attendance control in companies, reducing errors and facilitating real-time tracking.",
@@ -59,7 +59,7 @@ export const works: WorkType[] = [
   ]
 },
   {
-    id: "2",
+    id: "reportcapy",
     title: "ReportCapy",
     year: "2024",
     description: "Mobile app that allows users to report potholes in the streets of Trinidad by submitting photos and location data.",
@@ -73,7 +73,7 @@ export const works: WorkType[] = [
     ]
   },
   {
-    id: "3",
+    id: "cinema-landing",
     title: "Cinema Landing Page",
     year: "2023",
     description: "A Halloween-themed landing page created for a local cinema in Trinidad to promote a seasonal offer.",
@@ -88,7 +88,7 @@ export const works: WorkType[] = [
     ]
   },
   {
-    id: "4",
+    id: "librarypy",
     title: "LibraryPy",
     year: "2024",
     description: "Desktop software for library management in Bolivia. It allows registering readers and books, managing book loans and returns, and generating PDF reports.",
@@ -104,7 +104,7 @@ export const works: WorkType[] = [
     ]
   },
   {
-    id: "5",
+    id: "tuhogarideal",
     title: "TuHogarIdeal",
     year: "2023",
     description: "Web platform for finding and browsing real estate listings, with a focus on houses.",
