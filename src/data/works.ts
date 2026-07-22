@@ -5,6 +5,7 @@ import horro from '../picture/works/horro.png'
 import repocapy from '../picture/works/repocapy1.png'
 import asistens from '../picture/works/asistens.png'
 import capiScan from '../picture/works/CapiScan.png'
+import sigsot from '../picture/works/SIGSOT.png'
 
 export type WorkType = {
   id: string
@@ -19,6 +20,29 @@ export type WorkType = {
   features?: string[]
 }
 export const works: WorkType[] = [
+  {
+    id: "sigsot",
+    title: "SIGSOT",
+    year: "2026",
+    description: "Web system for automated IT technical support management within the G.A.M.T., built as a migration to free software. It allows managing support requests, registering and controlling technological equipment, assigning technical work, tracking incidents and maintenance, managing officials and departments, and generating reports and requests.",
+    platform: "Web",
+    stack: "Laravel, PHP, MySQL, Docker",
+    source: [],
+    thumbnail: sigsot,
+    images: [
+      "/picture/SIGSOT/2026-07-22-163632_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-163639_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164029_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164056_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164107_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164115_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164126_hyprshot.png",
+      "/picture/SIGSOT/2026-07-22-164141_hyprshot.png",
+      "/picture/SIGSOT/MarcasAlert.png",
+      "/picture/SIGSOT/MarcasEdit.png",
+      "/picture/SIGSOT/MarcasIndex.png"
+    ]
+  },
   {
     id: "capiscan",
     title: "CapiScan",
@@ -37,27 +61,27 @@ export const works: WorkType[] = [
   },
   {
     id: "asistens",
-  title: "Multiplatform Attendance Control System",
-  year: "2025",
-  description: "Attendance Management is a multi-platform system that facilitates staff management through a web-based dashboard for registering, editing, and deleting employees, generating unique QR codes for each user, controlling entry and exit times, viewing attendance, and generating PDF reports. It also includes a desktop application that allows attendance to be recorded by scanning each employee's QR code, and a documented API with Swagger that exposes the services necessary for communication between components. This solution improves the accuracy and efficiency of attendance control in companies, reducing errors and facilitating real-time tracking.",
-  platform: "desktop, web system",
-  stack: "ASP.NET MVC, Swagger (Swashbuckle), WPF, Razor, Bootstrap, Microsoft SQL Server, Git, GitHub",
-  source: [
-    "https://github.com/ARCANIK78/appAsistencia.git",
-    "https://github.com/ARCANIK78/Web_Services-Asistens",
-    "https://github.com/ARCANIK78/appWebAdminAsistens.git ",
-  ], 
-  thumbnail: asistens,
-  images: [
-    "/picture/Asistens/Captura1.JPG",
-    "/picture/Asistens/Captura2.JPG",
-    "/picture/Asistens/Captura3.JPG",
-    "/picture/Asistens/Captura4.JPG",
-    "/picture/Asistens/Captura5.JPG",
-    "/picture/Asistens/Captura6.JPG",
-    "/picture/Asistens/Captura.JPG",
-  ]
-},
+    title: "Multiplatform Attendance Control System",
+    year: "2025",
+    description: "Attendance Management is a multi-platform system that facilitates staff management through a web-based dashboard for registering, editing, and deleting employees, generating unique QR codes for each user, controlling entry and exit times, viewing attendance, and generating PDF reports. It also includes a desktop application that allows attendance to be recorded by scanning each employee's QR code, and a documented API with Swagger that exposes the services necessary for communication between components. This solution improves the accuracy and efficiency of attendance control in companies, reducing errors and facilitating real-time tracking.",
+    platform: "desktop, web system",
+    stack: "ASP.NET MVC, Swagger (Swashbuckle), WPF, Razor, Bootstrap, Microsoft SQL Server, Git, GitHub",
+    source: [
+      "https://github.com/ARCANIK78/appAsistencia.git",
+      "https://github.com/ARCANIK78/Web_Services-Asistens",
+      "https://github.com/ARCANIK78/appWebAdminAsistens.git ",
+    ],
+    thumbnail: asistens,
+    images: [
+      "/picture/Asistens/Captura1.JPG",
+      "/picture/Asistens/Captura2.JPG",
+      "/picture/Asistens/Captura3.JPG",
+      "/picture/Asistens/Captura4.JPG",
+      "/picture/Asistens/Captura5.JPG",
+      "/picture/Asistens/Captura6.JPG",
+      "/picture/Asistens/Captura.JPG",
+    ]
+  },
   {
     id: "reportcapy",
     title: "ReportCapy",
@@ -65,8 +89,8 @@ export const works: WorkType[] = [
     description: "Mobile app that allows users to report potholes in the streets of Trinidad by submitting photos and location data.",
     platform: "Mobile",
     stack: "Kotlin, Firebase",
-    source:[ "null"],
-    thumbnail: repocapy, 
+    source: ["null"],
+    thumbnail: repocapy,
     images: [
       "/picture/repocapy/WhatsApp Image 2025-08-09 at 2.32.34 PM.jpeg",
       "/picture/repocapy/WhatsApp Image 2025-08-09 at 2.32.34 PM(1).jpeg"
@@ -80,7 +104,7 @@ export const works: WorkType[] = [
     platform: "Web",
     stack: "HTML, CSS (Tailwind), JavaScript",
     source: ["null"],
-    thumbnail: horro, 
+    thumbnail: horro,
     images: [
       "/picture/horror/Captura desde 2025-08-09 09-21-59.png",
       "/picture/horror/Captura desde 2025-08-09 09-22-17.png",
@@ -95,7 +119,7 @@ export const works: WorkType[] = [
     platform: "Desktop",
     stack: "Python, Qt Designer, MySQL",
     source: ["https://github.com/ARCANIK78/LibraryPy--Sistema-de-gestion-de-biblioteca.git"],
-    thumbnail: thumBiblio, 
+    thumbnail: thumBiblio,
     images: [
       "/picture/bibliopy/biblio1.png",
       "/picture/bibliopy/biblio2.png",
@@ -111,7 +135,7 @@ export const works: WorkType[] = [
     platform: "Web",
     stack: "React, Material UI, MongoDB, Node.js (Express)",
     source: ["null"],
-    thumbnail: hogar, 
+    thumbnail: hogar,
     images: [
       "/picture/hogarIdeal/Captura4.JPG",
       "/picture/hogarIdeal/tu-hogar-ideal.JPG",
